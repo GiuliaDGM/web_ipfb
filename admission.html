@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPFB - Admission</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'> 
+
+</head>
+  <body>
+
+    <header class="py-4">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn rounded-3 ms-2" href="index.html">
+                            <h5>IPFB</h5>
+                        </a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="btn rounded-3 ms-2" href="recettes.html">Recettes
+                        </a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="btn rounded-3 ms-2" href="admission.html">Admission
+                        </a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="btn rounded-3 ms-2" href="cv.html">C'est la vie
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="master" class="py-5 p-4" style="background-image:  url('img/square2-patisserie.webp');">
+            <div class="container">
+                <h1><b>Master Bioinformatique</b></h1>
+                <h2><b>Parcours : Ingénerie des Patisseries Françaises et Biologiques (IPFB)</b></h2>
+                <h1><b>Admission</b></h1>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="col alert  alert-danger"> 
+                <p style="margin-top: 2%; text-align: center;">
+                    <i>Au vu du nombre considérable de candidatures reçu l'an passé, les personnes qui souhaitent postuler 
+                    pour le master IPFB doivent remplir le formulaire ci dessous. Les candidats ayant validés le
+                    test receveront un email pour poursuivre le processus de recrutement. Bien cordialement.
+                    </i>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 style="text-align: center; text-decoration: underline;">Formulaire de candidature</h2>
+            <form id="quiz-form">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label style="text-decoration:underline; font-weight: bold;">Quelle est la viennoiserie préférée des français ?</label>
+                <div class="form-check-label"><input type="radio" name="viennoiserie" value="Pain au chocolat" required>Pain au chocolat</div>
+                <div class="form-check-label"><input type="radio" name="viennoiserie" value="Croissant">Croissant</div>
+                <div class="form-check-label"><input type="radio" name="viennoiserie" value="Chocolatine">Chocolatine</div>
+                <div class="form-check-label"><input type="radio" name="viennoiserie" value="Pain aux raisins">Pain aux raisins</div>
+              </div>
+          
+              <div class="form-group">
+                <label style="text-decoration:underline; font-weight: bold;">Quels sont les ingrédients nécessaires pour faire une terrine de campagne ?</label>
+                <div class="form-check-label"><input type="radio" name="terrine" value="De la pate et des pattes" required>De la pate et des pattes</div>
+                <div class="form-check-label"><input type="radio" name="terrine" value="Du compost">Du compost</div>
+                <div class="form-check-label"><input type="radio" name="terrine" value="De la gelatine">De la gelatine</div>
+                <div class="form-check-label"><input type="radio" name="terrine" value="Des pistaches">Des pistaches</div>
+              </div>
+          
+              <div class="form-group">
+                <label style="text-decoration:underline; font-weight: bold;">À quelle valeur correspond une livre ?</label>
+                <div class="form-check-label"><input type="radio" name="livre" value="A au moins 1 239 mots" required>A au moins 1 239 mots</div>
+                <div class="form-check-label"><input type="radio" name="livre" value="1,12€ au cours actuel">1,12€ au cours actuel</div>
+                <div class="form-check-label"><input type="radio" name="livre" value="500g">500g</div>
+                <div class="form-check-label"><input type="radio" name="livre" value="750g">750g</div>
+              </div>
+          
+              <div class="form-group">
+                <label style="text-decoration:underline; font-weight: bold;">Qui est maryse ?</label>
+                <div class="form-check-label"><input type="checkbox" name="maryse" value="Une bonne cuisinière">Une bonne cuisinière</div>
+                <div class="form-check-label"><input type="checkbox" name="maryse" value="Une spatule">Une spatule</div>
+                <div class="form-check-label"><input type="checkbox" name="maryse" value="Une pelle">Une pelle</div>
+                <div class="form-check-label"><input type="checkbox" name="maryse" value="Une patisserie">Une patisserie</div>
+              </div>
+          
+              <div class="form-group">
+                <input type="submit" value="Postuler">
+              </div>
+            </form>
+        </div>
+    </main>
+
+    <!--pied de page-->
+    <footer class="border-top">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-md-2">
+                    <img class="rounded-3 img-fluid" src="https://u-paris.fr/wp-content/uploads/2022/03/UniversiteParisCite_logo_horizontal_couleur_RVB.jpg" alt="logo">
+                </div>
+                <div class="col-md-10 text-center">
+                    <p><i>Projet réalisé en 2024 dans le cadre du module "Programmation web", Master en Bioinformatique, Université Paris Cité</i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
